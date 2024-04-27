@@ -1,0 +1,9 @@
+CREATE TABLE moncontacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nomcomplet VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    numtelephone VARCHAR(15),
+    objet VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
