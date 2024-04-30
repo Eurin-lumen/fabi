@@ -22,19 +22,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $email = trim($_POST["email"]);
         // Vérification du format de l'adresse email
-        /*if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $email_err = "Format d'email invalide.";
-        }*/
+        }
     }
 
     // Vérification du champ Numéro de Téléphone (optionnel)
     if (!empty($_POST["num_telephone"])) {
         $num_telephone = trim($_POST["num_telephone"]);
         // Vérification du format du numéro de téléphone
-       /* if (!preg_match("/^\d{10}$/", $num_telephone)) {
+        // Autorise les formats avec espaces, tirets, et parenthèses
+        if (!preg_match("/^\+?(\d[\s-]?)?(\(\d{1,3}\)[\s-]?)?[\d\s-]{5,15}$/", $num_telephone)) {
             $num_telephone_err = "Format de numéro de téléphone invalide.";
-        }*/
+        }
     }
+
 
     // Vérification du champ Objet
     if (empty($_POST["objet"])) {
