@@ -1,0 +1,81 @@
+/* Styles généraux pour la page */
+body {
+    font-family: 'Arial', sans-serif; /* Utilisation d'une police claire et professionnelle */
+    background-color: #f0f2f5; /* Couleur de fond douce */
+    padding: 20px; /* Espacement autour du contenu de la page */
+    color: #333; /* Couleur du texte foncée pour une meilleure lisibilité */
+}
+
+/* Style pour les titres */
+h2 {
+    color: #444;
+    font-size: 24px;
+    text-align: center; /* Centrage du titre */
+    margin-bottom: 20px; /* Espacement après le titre */
+}
+
+/* Styles pour les formulaires */
+form {
+    background: white;
+    max-width: 600px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage du formulaire */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour le formulaire */
+    border-radius: 8px; /* Bordures arrondies */
+}
+
+/* Styles pour les divs contenant les inputs */
+div {
+    margin-bottom: 10px; /* Espacement entre les champs */
+}
+
+/* Styles pour les labels */
+label {
+    display: block; /* Les labels s'affichent comme des blocs */
+    margin-bottom: 5px; /* Espacement en dessous des labels */
+    font-weight: bold; /* Rend les labels en gras */
+}
+
+/* Styles pour les inputs et les textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Pleine largeur */
+    padding: 8px; /* Padding pour les champs */
+    border: 1px solid #ccc; /* Bordure subtile */
+    border-radius: 4px; /* Bordures légèrement arrondies */
+}
+
+/* Style pour le bouton de soumission */
+button {
+    background-color: #007BFF; /* Bleu Bootstrap */
+    color: white; /* Texte blanc */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Curseur pointeur pour indiquer la cliquabilité */
+    width: 100%; /* Pleine largeur du bouton */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Bleu légèrement plus foncé au survol */
+}
+
+/* Styles pour les messages de succès ou d'erreur */
+.message {
+    text-align: center; /* Centrage des messages */
+    padding: 10px;
+    margin-bottom: 20px; /* Espacement après le message */
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #28a745; /* Vert pour le succès */
+    color: white;
+}
+
+.error {
+    background-color: #dc3545; /* Rouge pour les erreurs */
+    color: white;
+}

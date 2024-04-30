@@ -40,3 +40,26 @@ tr:nth-child(even) {
     color: #008000; /* Couleur verte pour les messages de succès */
     border-color: #008000; /* Bordure verte */
 }
+
+
+/* Styles généraux pour les messages */
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Styles spécifiques pour les messages d'erreur */
+.error {
+    background-color: #d32f2f; /* Rouge foncé pour les erreurs */
+    border: 1px solid #b71c1c; /* Bordure plus foncée */
+}
+
+/* Styles pour les messages de succès (si nécessaire) */
+.success {
+    background-color: #388e3c; /* Vert pour les succès */
+    border: 1px solid #1b5e20; /* Bordure verte plus foncée */
+}
