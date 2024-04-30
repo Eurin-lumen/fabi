@@ -1,0 +1,42 @@
+/* Styles généraux pour la page */
+body {
+    font-family: Arial, sans-serif; /* Police plus moderne */
+    padding: 20px; /* Espacement autour de la page */
+    background: #f4f4f4; /* Couleur de fond légère */
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%; /* Pleine largeur */
+    border-collapse: collapse; /* Les bordures des cellules se collent */
+    margin-top: 20px; /* Espacement au-dessus du tableau */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordure légère pour les cellules */
+    padding: 8px; /* Espacement interne */
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 14px; /* Taille de la police */
+}
+
+th {
+    background-color: #e9e9e9; /* Fond gris pour les en-têtes */
+    color: #333; /* Couleur du texte plus foncée */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Une couleur différente pour les lignes paires */
+}
+
+/* Styles pour les messages d'erreur ou de confirmation */
+.error, .success {
+    color: #ff0000; /* Couleur rouge pour les erreurs */
+    font-size: 16px; /* Taille de la police pour les messages */
+    padding: 10px; /* Espacement interne pour le message */
+    border: 1px solid #ff0000; /* Bordure rouge pour les erreurs */
+    margin-top: 20px; /* Espacement au-dessus du message */
+}
+.success {
+    color: #008000; /* Couleur verte pour les messages de succès */
+    border-color: #008000; /* Bordure verte */
+}
